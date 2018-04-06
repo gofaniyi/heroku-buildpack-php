@@ -22,7 +22,7 @@ export BUILDPACK_LOG_FILE=${BUILDPACK_LOG_FILE:-/dev/null}
 # convenience functions
 source $bp_dir/bin/util/common.sh
 
-source $bp_dir/bin/phalcon.sh
+# source $bp_dir/bin/phalcon.sh
 
 # stdlib
 source /dev/stdin <<< "$(curl_retry_on_18 --silent https://lang-common.s3.amazonaws.com/buildpack-stdlib/v8/stdlib.sh)"
